@@ -1,11 +1,13 @@
 Dự án sử dụng kiến trúc CycleGAN để thực hiện chuyển đổi hình ảnh từ miền Ngày (Day) sang Đêm (Night) dựa trên bộ dữ liệu BDD100K.
 
 1. Môi trường thực nghiệm
+
 GPU: NVIDIA RTX 4090 (24GB VRAM)
 Framework: PyTorch, Torchvision
 Môi trường: Docker (root@patient-orca)
 
 2. Quy trình thực hiện nhanh
+
 Bước 1:Chuẩn bị mã nguồn
 # Di chuyển vào thư mục làm việc
 cd /workspace
