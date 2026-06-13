@@ -11,19 +11,57 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Large datasets / generated data
+# Raw / generated large data
 images/
 labels/
-dataset_augmented/
-dataset_baseline/
-dataset_day_yolo/
-dataset_night/
-dataset_night_yolo/
+outputs/
 *.zip
 
-# Models / external repos / outputs
+# Ignore heavy contents inside dataset folders, but keep code/config files
+dataset_augmented/images/
+dataset_augmented/labels/
+dataset_augmented/runs/
+dataset_augmented/*.pt
+dataset_augmented/*.pth
+dataset_augmented/*.onnx
+dataset_augmented/*.ckpt
+dataset_augmented/*.safetensors
+
+dataset_baseline/images/
+dataset_baseline/labels/
+dataset_baseline/runs/
+dataset_baseline/*.pt
+dataset_baseline/*.pth
+dataset_baseline/*.onnx
+dataset_baseline/*.ckpt
+dataset_baseline/*.safetensors
+
+dataset_day_yolo/images/
+dataset_day_yolo/labels/
+dataset_day_yolo/runs/
+dataset_day_yolo/*.pt
+dataset_day_yolo/*.pth
+dataset_day_yolo/*.onnx
+dataset_day_yolo/*.ckpt
+dataset_day_yolo/*.safetensors
+
+dataset_night_yolo/images/
+dataset_night_yolo/labels/
+dataset_night_yolo/runs/
+dataset_night_yolo/*.pt
+dataset_night_yolo/*.pth
+dataset_night_yolo/*.onnx
+dataset_night_yolo/*.ckpt
+dataset_night_yolo/*.safetensors
+
+dataset_night/images/
+dataset_night/labels/
+dataset_night/runs/
+
+# External repo / model source
 img2img-turbo/
-outputs/
+
+# Model weights / training outputs
 runs/
 weights/
 checkpoints/
